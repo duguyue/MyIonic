@@ -39,27 +39,25 @@
     </ion-side-menu>
 
 </ion-side-menus>
-<script id="new-task.html" type="text/ng-template">
+<script id="new-task" type="text/ng-template">
 
     <div class="modal">
 
-        <!-- Modal header bar -->
         <ion-header-bar class="bar-secondary">
-            <h1 class="title">New Task</h1>
-            <button class="button button-clear button-positive" ng-click="closeNewTask()">Cancel</button>
+            <h1 class="title">新建事务</h1>
+            <button class="button button-clear button-positive" ng-click="closeNewTask()">关闭</button>
         </ion-header-bar>
 
-        <!-- Modal content area -->
         <ion-content>
 
             <form ng-submit="createTask(task)">
                 <div class="list">
                     <label class="item item-input">
-                        <input type="text" placeholder="What do you need to do?" ng-model="task.title">
+                        <input type="text" placeholder="请填写代办事项" ng-model="task.title">
                     </label>
                 </div>
                 <div class="padding">
-                    <button type="submit" class="button button-block button-positive">Create Task</button>
+                    <button type="submit" class="button button-block button-positive">新建事务</button>
                 </div>
             </form>
 
